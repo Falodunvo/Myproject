@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-globe"></i> TravelBloom
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with TravelBloom</h1>
+            <p>Discover hidden gems and iconic destinations across the globe</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-bar" 
+                    placeholder="Search destinations, beaches, temples, countries..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="search-btn">Search</button>
+                <button id="clearBtn" class="clear-btn">Clear</button>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Book Now Button -->
+            <button class="book-btn">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations">
+        <h2>Explore Categories</h2>
+        
+        <!-- Beach Recommendations -->
+        <div class="recommendation-category" id="beachCategory">
+            <h3>Beach Destinations</h3>
+            <div class="recommendation-grid">
+                <div class="recommendation-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop" alt="Maldives Beach">
+                    <div class="card-content">
+                        <h4>Maldives</h4>
+                        <p>Crystal clear waters and pristine white sand beaches</p>
+                    </div>
+                </div>
+                <div class="recommendation-card">
+                    <img src="https://images.unsplash.com/photo-1502933691298-84fc14542831?w=400&h=300&fit=crop" alt="Bali Beach">
+                    <div class="card-content">
+                        <h4>Bali</h4>
+                        <p>Tropical paradise with stunning sunset beaches</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Temple Recommendations -->
+        <div class="recommendation-category" id="templeCategory">
+            <h3>Temple Destinations</h3>
+            <div class="recommendation-grid">
+                <div class="recommendation-card">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400&h=300&fit=crop" alt="Angkor Wat">
+                    <div class="card-content">
+                        <h4>Angkor Wat</h4>
+                        <p>Ancient Khmer temple complex in Cambodia</p>
+                    </div>
+                </div>
+                <div class="recommendation-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Taj Mahal">
+                    <div class="card-content">
+                        <h4>Taj Mahal</h4>
+                        <p>Iconic symbol of love in Agra, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Recommendations -->
+        <div class="recommendation-category" id="countryCategory">
+            <h3>Country Destinations</h3>
+            <div class="recommendation-grid">
+                <div class="recommendation-card">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop" alt="Japan">
+                    <div class="card-content">
+                        <h4>Japan</h4>
+                        <p>A perfect blend of ancient tradition and modern innovation</p>
+                    </div>
+                </div>
+                <div class="recommendation-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&h=300&fit=crop" alt="Italy">
+                    <div class="card-content">
+                        <h4>Italy</h4>
+                        <p>Rich history, culture, and culinary delights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section id="resultsSection" class="results-section" style="display: none;">
+        <h2>Search Results</h2>
+        <div id="resultsContainer" class="results-container"></div>
+        <button id="backBtn" class="back-btn">Back to All Recommendations</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 TravelBloom. All rights reserved. | Discover your next adventure</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
